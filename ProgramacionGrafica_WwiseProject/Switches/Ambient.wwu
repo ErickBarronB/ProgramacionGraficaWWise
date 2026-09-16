@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9F45AC2D-EFA5-42A4-9313-D2FD036F4D66}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Ambient" ID="{9F45AC2D-EFA5-42A4-9313-D2FD036F4D66}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ambient_Switch" ID="{3AF2C369-C079-4E2E-AA8F-4567B99E1FDE}">
+					<ChildrenList>
+						<Switch Name="Rain" ID="{3D5EBC76-5A7E-4029-BB64-38E5E2B25412}"/>
+						<Switch Name="Clear" ID="{554A3453-6B59-4F2B-A616-DCEB52CC6B11}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Ambient_TimeOfDay" ID="{C1E32C2A-2D16-4830-BE90-11F865818C05}">
+					<ChildrenList>
+						<Switch Name="Day" ID="{3E87B78C-DA4F-41F9-915D-28C1C3123D19}"/>
+						<Switch Name="Night" ID="{C78481C5-1C54-491B-ABBE-510715CF8BC7}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

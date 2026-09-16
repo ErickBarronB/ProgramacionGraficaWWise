@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7C5EA17-ADC7-4C81-B45E-E3B102BF5DBA}" SchemaVersion="133">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{A7C5EA17-ADC7-4C81-B45E-E3B102BF5DBA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="AmbientStates" ID="{B28B0DCF-72FF-41F9-8FBC-51031EF689D4}" ShortID="712620559">
+					<ChildrenList>
+						<StateGroup Name="Location" ID="{16A3CB9D-C97B-4885-A974-0CC8994BC045}">
+							<ChildrenList>
+								<State Name="None" ID="{A6FD8802-16CD-4066-8595-3E1DEF46654E}"/>
+								<State Name="Indoor" ID="{E4621D8E-1549-4E75-AEB0-E07A6B959D9F}"/>
+								<State Name="Outdoor" ID="{97BD6312-C4A0-4EC1-8D5E-41FE522BDDB7}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Indoor" ID="{E4621D8E-1549-4E75-AEB0-E07A6B959D9F}"/>
+									<EndState Name="Outdoor" ID="{97BD6312-C4A0-4EC1-8D5E-41FE522BDDB7}"/>
+									<Time>0.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Outdoor" ID="{97BD6312-C4A0-4EC1-8D5E-41FE522BDDB7}"/>
+									<EndState Name="Indoor" ID="{E4621D8E-1549-4E75-AEB0-E07A6B959D9F}"/>
+									<Time>0.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

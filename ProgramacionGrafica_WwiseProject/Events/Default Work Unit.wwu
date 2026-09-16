@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="SFX_StartForceField" ID="{3ED40C77-D665-4F34-BBF6-B3662E257919}">
+					<ChildrenList>
+						<Action Name="" ID="{CB82AB5C-600A-4C81-9985-6B08EEEF5CF7}" ShortID="786181358">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StartFField" ID="{7BC7801E-BC68-491C-A468-7FADDD1F439D}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Player" ID="{C5496BD1-1852-43F6-8AB1-EE49C3650925}" ShortID="857462902">
+					<ChildrenList>
+						<Folder Name="Items" ID="{C765686A-F479-452C-8F63-E84078868112}" ShortID="641698214">
+							<ChildrenList>
+								<Event Name="Toggle_Flashlight" ID="{03BB90BE-58BE-45E5-BD3D-964D16DF8363}">
+									<ChildrenList>
+										<Action Name="" ID="{663646B4-1D53-42B4-8C0B-409A5EFDF692}" ShortID="398448062">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Item_Flashlight_Toggle" ID="{67DFAFFE-BE3F-41B0-AD5D-903C05962D6C}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Interactions" ID="{5DFC7206-DCDF-4484-B5AB-DD413507DADD}" ShortID="686608189">
+					<ChildrenList>
+						<Event Name="Play_LightSwitch" ID="{A41DE961-AC2F-4B72-AA59-AA8905586A43}">
+							<ChildrenList>
+								<Action Name="" ID="{E2F88FF5-806E-4084-BDFC-CB069170199E}" ShortID="169824706">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LightSwitch" ID="{488AD7BF-4059-44CC-BED4-EAD314E9D464}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

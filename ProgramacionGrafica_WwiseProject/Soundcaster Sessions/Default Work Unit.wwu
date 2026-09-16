@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2943E025-BDC9-43AA-AC78-A6F220E36E44}" SchemaVersion="133">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{2943E025-BDC9-43AA-AC78-A6F220E36E44}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{E6C4A7A4-C4AD-4B78-8E41-7CD78B6EDDB1}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="SFX_StartForceField" ID="{3ED40C77-D665-4F34-BBF6-B3662E257919}" WorkUnitID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambient_Switch" ID="{46C12933-B883-4EEB-BEA9-91AFB9E7C3BC}" WorkUnitID="{B2800499-ACEE-48B0-9EB3-67776D16BFA6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

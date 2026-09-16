@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB033DA7-A2E7-4EF8-A374-78FE9E9252EF}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{CB033DA7-A2E7-4EF8-A374-78FE9E9252EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="AmbientParams" ID="{9DFAFEC7-AAF8-4BA7-AB60-4631A0E95076}" ShortID="219140659">
+					<ChildrenList>
+						<GameParameter Name="Position" ID="{B429EE53-AE2B-41F5-A8D7-2BF9264F2CFA}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="ThunderIntensity" ID="{7A6736B9-45FF-4301-8DCE-8ED807DFC558}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

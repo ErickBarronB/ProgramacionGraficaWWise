@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B2800499-ACEE-48B0-9EB3-67776D16BFA6}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Ambient" ID="{B2800499-ACEE-48B0-9EB3-67776D16BFA6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Ambient_Switch" ID="{46C12933-B883-4EEB-BEA9-91AFB9E7C3BC}">
+					<ChildrenList>
+						<Action Name="" ID="{80DEFE5A-64CA-4D52-AF5C-1652DEB56330}" ShortID="378957582">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbientSwitch" ID="{249AB7F2-463E-4F3D-8C2B-177F4946D45C}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

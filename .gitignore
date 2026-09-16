@@ -1,0 +1,118 @@
+# ---------------------------------------------------
+# Unreal Engine 5.8 + Wwise .gitignore
+# ---------------------------------------------------
+
+# Visual Studio / Rider / VSCode generated files
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Compiled source
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.exp
+*.ilk
+
+# UE Build / intermediate directories
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Plugins' Binaries and Intermediate (includes Wwise plugin itself)
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Standard Visual Studio project files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln.iml
+
+# UE generated project files
+*.xcodeproj
+*.xcworkspace
+*.workspace
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Saved/ subfolders
+Saved/Cooked/
+Saved/StagedBuilds/
+Saved/Logs/
+Saved/Backup/
+Saved/Autosaves/
+Saved/Crashes/
+Saved/HardwareSurvey/
+Saved/Config/
+Saved/Sandboxes/
+
+# UnrealHeaderTool / UBT logs
+*.target
+*.modules
+*.uhtmanifest
+
+# Rider / Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------
+# WWISE-SPECIFIC
+# ---------------------------------------------------
+
+# Wwise authoring project cache (regenerated locally per-machine,
+# NOT source — this is the equivalent of Intermediate/ for Wwise)
+WwiseProject/.cache/
+WwiseProject/*.cache
+**/Wwise/.cache/
+
+# Wwise auto-generated SoundBank output (regenerated from the
+# Wwise project by the SoundBank build step — do not version
+# unless your pipeline explicitly requires committing pre-baked banks)
+WwiseProject/GeneratedSoundBanks/
+**/GeneratedSoundBanks/
+
+# Wwise backup/versioning files the authoring tool creates
+*.wproj_backup
+*.wproj.bak
+*.wwu.bak
+
+# Wwise per-user workspace settings (machine-specific, like .suo)
+*.wwise_user
+WwiseProject/*.wwu.user
+
+# Wwise SoundBank .txt/.xml metadata that's regenerated on build
+# (uncomment if your pipeline regenerates these — some teams keep them)
+# SoundbanksInfo.xml
+# SoundbanksInfo.json
+
+# Wwise ThirdParty SDK binaries pulled in by the Integration
+# (often huge; many teams fetch these via a setup script instead
+# of committing them — uncomment if that's your workflow)
+# Plugins/Wwise/ThirdParty/
+
+# Wwise log files
+WwiseProject/*.log
+
+# ---------------------------------------------------
+# NOTE: Do NOT ignore Content/ — .uasset/.umap and the
+# UE-imported Wwise banks (WwiseAudio/) are real project
+# content and must be versioned (via Git LFS, see .gitattributes)
+# ---------------------------------------------------

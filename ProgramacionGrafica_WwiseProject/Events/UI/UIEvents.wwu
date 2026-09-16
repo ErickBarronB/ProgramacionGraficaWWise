@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B328AB21-275B-4D84-AC43-641582CA16A1}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="UIEvents" ID="{B328AB21-275B-4D84-AC43-641582CA16A1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="UI_ButtonPress" ID="{DA2FA3D5-E93D-46C8-9096-20590A8A4A14}">
+					<ChildrenList>
+						<Action Name="" ID="{7EAEAC2B-0D81-43C5-85BB-0E0A69EEB807}" ShortID="404530566">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonPress" ID="{A96DBAD2-2C93-4CF9-9137-03095F06F6FA}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_ButtonHover" ID="{C87CACD2-BC6D-4F14-8272-72DB36589083}">
+					<ChildrenList>
+						<Action Name="" ID="{319AFA6A-9E0C-4207-9764-3219569710EC}" ShortID="322897901">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonHover" ID="{92D9DFAB-3DF6-4C28-8BA9-3DC2598EA472}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
