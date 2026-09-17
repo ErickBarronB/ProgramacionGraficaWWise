@@ -46,6 +46,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Radio" ID="{BFD5CE4C-1B19-4CB7-9F3D-4CFFFC4A7C1C}" ShortID="209975705">
+							<ChildrenList>
+								<Event Name="Play_RadioStatic" ID="{A34FCD5C-8B40-45C3-B6D1-8EB1BB7CA0E2}">
+									<ChildrenList>
+										<Action Name="" ID="{3C8C53AC-DA6C-4A75-ACA3-861402C5808E}" ShortID="221714975">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RadioStatic" ID="{C4EFA273-46B6-4B54-85EB-A8544192F136}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
