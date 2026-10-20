@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5F0DB58E-EB07-4DDA-8098-08AD1003930A}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Player" ID="{5F0DB58E-EB07-4DDA-8098-08AD1003930A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Footsteps" ID="{5730A3E8-3B7F-4797-B9FC-F0666E140A5F}">
+					<ChildrenList>
+						<Action Name="" ID="{717A0A2C-70C3-48E8-AD0B-A1EF6E69FB27}" ShortID="910134420">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootstepsSwitch" ID="{FFC16F9E-0776-49F2-9483-9CAE221C31DB}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
