@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Stamina" ID="{E5B4C7F8-C056-4D2D-983F-12C9F2FCDC76}">
+					<ChildrenList>
+						<Action Name="" ID="{584A9F57-FF3F-497F-8ACF-12334F2514F4}" ShortID="364135240">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat" ID="{34D8B05D-7D26-4796-B70E-B46D0AB6B109}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

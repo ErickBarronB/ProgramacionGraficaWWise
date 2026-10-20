@@ -3,16 +3,11 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{CB033DA7-A2E7-4EF8-A374-78FE9E9252EF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="AmbientParams" ID="{9DFAFEC7-AAF8-4BA7-AB60-4631A0E95076}" ShortID="219140659">
+				<Folder Name="Player" ID="{6C830EFE-C7EF-43BB-9346-3A4708D7C94B}" ShortID="462890999">
 					<ChildrenList>
-						<GameParameter Name="Position" ID="{B429EE53-AE2B-41F5-A8D7-2BF9264F2CFA}">
+						<GameParameter Name="Player_Stamina" ID="{4EBF77E2-0509-4E76-8505-694FDB845943}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="ThunderIntensity" ID="{7A6736B9-45FF-4301-8DCE-8ED807DFC558}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>

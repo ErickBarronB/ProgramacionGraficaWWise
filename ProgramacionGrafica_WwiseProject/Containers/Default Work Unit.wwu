@@ -797,6 +797,260 @@
 								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Stats" ID="{D4EE9A34-7CC5-4DBB-81D2-6271A554B864}" ShortID="995459879">
+							<ChildrenList>
+								<RandomSequenceContainer Name="Heartbeat" ID="{34D8B05D-7D26-4796-B70E-B46D0AB6B109}" ShortID="537466624">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>58</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Heartbeat1" ID="{0F132F4B-096E-4BD8-9DD5-219B865E82CF}" ShortID="802195991">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Heartbeat1" ID="{E465FBD9-CD84-4D6F-8376-16A1161784C3}">
+													<Language>SFX</Language>
+													<AudioFile>Heartbeat1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="72147701"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Heartbeat1" ID="{E465FBD9-CD84-4D6F-8376-16A1161784C3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Heartbeat2" ID="{9625F8F4-6F80-4FF5-B7E7-14F1FC2A78CA}" ShortID="439636719">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Heartbeat2" ID="{C4171F56-A2D3-4724-988E-03083CA73819}">
+													<Language>SFX</Language>
+													<AudioFile>Heartbeat2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="907350684"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Heartbeat2" ID="{C4171F56-A2D3-4724-988E-03083CA73819}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Heartbeat3" ID="{C20C4FFF-A7E8-47F8-8AC1-AD31DD776EFE}" ShortID="1044948967">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Heartbeat3" ID="{A4E2864E-09B6-4C78-B495-279B563491C9}">
+													<Language>SFX</Language>
+													<AudioFile>Heartbeat3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="412443985"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Heartbeat3" ID="{A4E2864E-09B6-4C78-B495-279B563491C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Heartbeat4" ID="{B93B33DE-641C-4FB2-B39A-04E1DCF06AC9}" ShortID="241240242">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Heartbeat4" ID="{55650367-FDC8-4978-B069-DA0C04F0B6BB}">
+													<Language>SFX</Language>
+													<AudioFile>Heartbeat4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="495153202"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Heartbeat4" ID="{55650367-FDC8-4978-B069-DA0C04F0B6BB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Heartbeat5" ID="{A5647EAD-171E-4093-926A-DDDD331F609B}" ShortID="666799983">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Heartbeat5" ID="{1C9E86F6-12A9-4129-AC31-475A99DF54EE}">
+													<Language>SFX</Language>
+													<AudioFile>Heartbeat5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="242342920"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Heartbeat5" ID="{1C9E86F6-12A9-4129-AC31-475A99DF54EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Playlist">
+											<PluginInnerObject Name="" ID="{44551960-8468-4C93-BBAF-FBF0DD321668}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+												<ReferenceList>
+													<Reference Name="PlaylistObject">
+														<ObjectRef Name="Heartbeat1" ID="{0F132F4B-096E-4BD8-9DD5-219B865E82CF}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+													</Reference>
+												</ReferenceList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{9DA8FA70-B70A-4CCA-AAFC-9C5A5D387BEE}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+												<ReferenceList>
+													<Reference Name="PlaylistObject">
+														<ObjectRef Name="Heartbeat2" ID="{9625F8F4-6F80-4FF5-B7E7-14F1FC2A78CA}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+													</Reference>
+												</ReferenceList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{8989081C-C240-417D-88B6-38F8F8EEE00F}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+												<ReferenceList>
+													<Reference Name="PlaylistObject">
+														<ObjectRef Name="Heartbeat3" ID="{C20C4FFF-A7E8-47F8-8AC1-AD31DD776EFE}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+													</Reference>
+												</ReferenceList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{5E75796F-F79B-4230-A586-3920D8BB3B1D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+												<ReferenceList>
+													<Reference Name="PlaylistObject">
+														<ObjectRef Name="Heartbeat4" ID="{B93B33DE-641C-4FB2-B39A-04E1DCF06AC9}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+													</Reference>
+												</ReferenceList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{743AC525-DE22-40B9-8A50-F75CCF135CCF}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+												<ReferenceList>
+													<Reference Name="PlaylistObject">
+														<ObjectRef Name="Heartbeat5" ID="{A5647EAD-171E-4093-926A-DDDD331F609B}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+													</Reference>
+												</ReferenceList>
+											</PluginInnerObject>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{F99FAA3E-266A-4799-B4A4-8743D879E71F}" ShortID="426911619">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_Stamina" ID="{4EBF77E2-0509-4E76-8505-694FDB845943}" WorkUnitID="{CB033DA7-A2E7-4EF8-A374-78FE9E9252EF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{12D0D216-389E-4C69-9A32-375FE9B9D6E4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0.13787</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>31.64426</XPos>
+																		<YPos>-3.69451</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>40.84798</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{C67DD868-CD12-4425-9B99-71890E606082}" ShortID="939077915">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_Stamina" ID="{4EBF77E2-0509-4E76-8505-694FDB845943}" WorkUnitID="{CB033DA7-A2E7-4EF8-A374-78FE9E9252EF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{78416505-9014-4103-816F-AE7151869E2D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>188</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>39.91727</XPos>
+																		<YPos>38</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactions" ID="{BA948879-F4A0-4AB7-AF82-102A0A543E5E}" ShortID="524623946">

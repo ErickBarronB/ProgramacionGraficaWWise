@@ -1184,6 +1184,8 @@ FText SWwiseBrowser::GetConnectionStatusText() const
 		return LOCTEXT("WwiseWrongProject", "Not Connected to Wwise. Only objects on disk shown. The wrong Wwise project is opened.");
 	case WrongRootOutputPath:
 		return LOCTEXT("WwiseWrongRoot", "Not Connected to Wwise. Root Output Path is different from the Wwise Project's Root Output Path.");
+	case OpenedModalWindow:
+		return LOCTEXT("WwiseModalWindowOpen", "A Modal window is open in the Wwise Project.");
 	case WwiseNotOpen:
 	default:
 		return LOCTEXT("WwiseNotConnected", "Not Connected to Wwise. Only objects on disk shown. Open Wwise to see the Wwise project in the Browser.");

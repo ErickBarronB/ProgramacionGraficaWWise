@@ -647,11 +647,6 @@ void UAkComponent::OnUpdateTransform(EUpdateTransformFlags UpdateTransformFlags,
 		UpdateGameObjectPosition();
 }
 
-UAkComponent* UAkComponent::GetAkComponent(AkGameObjectID GameObjectID)
-{ 
-	return GameObjectID == DUMMY_GAMEOBJ ? nullptr : (UAkComponent*)GameObjectID;
-}
-
 void UAkComponent::GetAkGameObjectName(FString& Name) const
 {
 	AActor* parentActor = GetOwner();

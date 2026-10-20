@@ -221,6 +221,7 @@ public:
     void ConnectionEstablished();
     void BroadcastConnectionLost();
     static bool IsProjectLoaded();
+    static bool IsProjectAvailable();
     static void ConvertProjectPath(FString& Path);
 
     /**

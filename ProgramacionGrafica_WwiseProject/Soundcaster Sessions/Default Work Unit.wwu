@@ -15,6 +15,46 @@
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Soundcaster" ID="{E93AED91-E2C3-4AAC-8D29-877E8A2C0559}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Footsteps" ID="{5730A3E8-3B7F-4797-B9FC-F0666E140A5F}" WorkUnitID="{5F0DB58E-EB07-4DDA-8098-08AD1003930A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_RadioStatic" ID="{A34FCD5C-8B40-45C3-B6D1-8EB1BB7CA0E2}" WorkUnitID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_StartForceField" ID="{3ED40C77-D665-4F34-BBF6-B3662E257919}" WorkUnitID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_ButtonHover" ID="{C87CACD2-BC6D-4F14-8272-72DB36589083}" WorkUnitID="{B328AB21-275B-4D84-AC43-641582CA16A1}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LightSwitch" ID="{A41DE961-AC2F-4B72-AA59-AA8905586A43}" WorkUnitID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Stamina" ID="{E5B4C7F8-C056-4D2D-983F-12C9F2FCDC76}" WorkUnitID="{5F0DB58E-EB07-4DDA-8098-08AD1003930A}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_ButtonPress" ID="{DA2FA3D5-E93D-46C8-9096-20590A8A4A14}" WorkUnitID="{B328AB21-275B-4D84-AC43-641582CA16A1}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Toggle_Flashlight" ID="{03BB90BE-58BE-45E5-BD3D-964D16DF8363}" WorkUnitID="{7189EDFB-F61C-46A5-ADD3-E8FC72AAE4E7}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambient_Switch" ID="{46C12933-B883-4EEB-BEA9-91AFB9E7C3BC}" WorkUnitID="{B2800499-ACEE-48B0-9EB3-67776D16BFA6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

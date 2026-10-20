@@ -51,7 +51,7 @@ public:
 	virtual bool FilterMedia(const WwiseRefMedia& Media);
 	virtual bool FilterSoundBank(const WwiseRefSoundBank& SoundBank);
 	
-	virtual void FilterLibraryAssets(FWwiseAssetLibraryFilteringSharedData& Shared, FWwiseAssetLibraryInfo& Library, bool bUpdateRemaining = true, bool bUpdateFilteredAssets = true);
+	virtual void FilterLibraryAssets(FWwiseAssetLibraryFilteringSharedData& Shared, FWwiseAssetLibraryInfo& Library, bool bUpdateRemaining = true, bool bUpdateFilteredAssets = true, const std::atomic<uint32>* CancellationToken = nullptr, uint32 ExpectedTokenValue = 0);
 	virtual bool FilterAsset(const FWwiseAssetLibraryFilteringSharedData& Shared, const FWwiseAssetLibraryInfo& Library, const WwiseAnyRef& Item);
 
 	virtual bool CreateAssetLibraryRef(FWwiseAssetLibraryRef&, const WwiseAnyRef& SourceRef);

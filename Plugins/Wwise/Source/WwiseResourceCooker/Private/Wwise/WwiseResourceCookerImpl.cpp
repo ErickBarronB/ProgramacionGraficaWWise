@@ -333,7 +333,7 @@ void FWwiseResourceCookerImpl::PreCacheAssetLibraryRef(FCookedAssetLibraryFiles&
 	case EWwiseAssetLibraryRefType::InitBank:
 	case EWwiseAssetLibraryRefType::SoundBank:
 		{
-			UE_LOG(LogWwiseResourceCooker, Display, TEXT("FWwiseResourceCookerImpl::PreCacheAssetLibraries(%s): Preparing %s Id %d: %s"), 
+			UE_LOG(LogWwiseResourceCooker, VeryVerbose, TEXT("FWwiseResourceCookerImpl::PreCacheAssetLibraries(%s): Preparing %s Id %d: %s"),
 				*Owner->GetName(), 
 				AssetLibraryRef.Type == EWwiseAssetLibraryRefType::InitBank ? TEXT("InitBank") : TEXT("SoundBank"),
 				AssetLibraryRef.Id, 
@@ -396,7 +396,7 @@ void FWwiseResourceCookerImpl::PreCacheAssetLibraryRef(FCookedAssetLibraryFiles&
 		break;
 	case EWwiseAssetLibraryRefType::Media:
 		{
-			UE_LOG(LogWwiseResourceCooker, Display, TEXT("FWwiseResourceCookerImpl::PreCacheAssetLibraries(%s): Preparing Media Id %d: %s"), *Owner->GetName(), AssetLibraryRef.Id, *ObjectInfo.WwiseName.ToString()); 
+			UE_LOG(LogWwiseResourceCooker, VeryVerbose, TEXT("FWwiseResourceCookerImpl::PreCacheAssetLibraries(%s): Preparing Media Id %d: %s"), *Owner->GetName(), AssetLibraryRef.Id, *ObjectInfo.WwiseName.ToString())
 			FWwiseMediaCookedData CookedData;
 			if (UNLIKELY(!PrepareCookedData(CookedData, Owner, ObjectInfo)))
 			{

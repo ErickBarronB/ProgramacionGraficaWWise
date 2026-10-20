@@ -2014,37 +2014,6 @@ void FAkAudioDevice::CleanDefaultListeners()
 	}
 }
 
-template<typename FCreateCallbackPackage>
-AkPlayingID FAkAudioDevice::PostEventWithCallbackPackageOnAkGameObject(
-	const AkUInt32 EventShortID,
-	UAkGameObject* GameObject,
-	const TArray<AkExternalSourceInfo>& ExternalSources,
-	FCreateCallbackPackage CreateCallbackPackage,
-	EAkAudioContext AudioContext
-)
-{
-	SCOPED_AKAUDIO_EVENT(TEXT("FAkAudioDevice::PostEventWithCallbackPackageOnAkGameObject"));
-	AkPlayingID PlayingID = AK_INVALID_PLAYING_ID;
-
-	if (m_bSoundEngineInitialized && GameObject && CallbackManager)
-	{
-		if (EventShortID != AK_INVALID_UNIQUE_ID && GameObject->AllowAudioPlayback())
-		{
-			GameObject->UpdateObstructionAndOcclusion();
-
-			auto gameObjID = GameObject->GetAkGameObjectID();
-
-			PlayingID = PostEventWithCallbackPackageOnGameObjectId(EventShortID, gameObjID, ExternalSources, CreateCallbackPackage, AudioContext);
-			if (PlayingID != AK_INVALID_PLAYING_ID)
-			{
-				GameObject->EventPosted();
-			}
-		}
-	}
-
-	return PlayingID;
-}
-
 void FAkAudioDevice::SAComponentAddedRemoved(UWorld* World)
 {
 	SCOPED_AKAUDIO_EVENT_3(TEXT("FAkAudioDevice::SAComponentAddedRemoved"));

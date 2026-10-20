@@ -509,6 +509,32 @@ bool FAkWaapiClient::IsProjectLoaded()
 #endif
 }
 
+bool FAkWaapiClient::IsProjectAvailable()
+{
+#if AK_SUPPORT_WAAPI
+	TSharedRef<FJsonObject> args = MakeShareable(new FJsonObject());
+	TSharedRef<FJsonObject> opts = MakeShareable(new FJsonObject());
+	TSharedPtr<FJsonObject> result = MakeShareable(new FJsonObject());
+	g_AkWaapiClient->Call(ak::wwise::core::ping, args, opts, result);
+
+	bool projectAvailable = false;
+	if (result->TryGetBoolField(WwiseWaapiHelper::IS_AVAILABLE, projectAvailable))
+	{
+		if (!projectAvailable)
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+	return true;
+#else
+	return false;
+#endif
+}
+
 void FAkWaapiClient::ConvertProjectPath(FString& Path)
 {
 #if PLATFORM_MAC
@@ -644,21 +670,7 @@ bool FAkWaapiClient::CheckProjectLoaded()
 		return false;
 	}
 
-	FString Status;
-	TSharedRef<FJsonObject> args = MakeShareable(new FJsonObject());
-	TSharedRef<FJsonObject> opts = MakeShareable(new FJsonObject());
-	TSharedPtr<FJsonObject> result = MakeShareable(new FJsonObject());
-	g_AkWaapiClient->Call(ak::wwise::core::ping, args, opts, result);
-
-	bool projectAvailable = false;
-	if (result->TryGetBoolField(WwiseWaapiHelper::IS_AVAILABLE, projectAvailable))
-	{
-		if (!projectAvailable)
-		{
-			return false;
-		}
-	}
-	else
+	if (!IsProjectAvailable())
 	{
 		return false;
 	}
@@ -722,7 +734,7 @@ bool FAkWaapiClient::AttemptConnection()
 		if (!bProjectLoaded)
 		{
 			// We successfully connected, but the wrong project is open (or getting the project timed out). Disconnect.
-			// We will attemps reconnection later.
+			// We will attempt reconnection later.
 			bIsWrongProjectLoaded = true;
 			m_Impl->m_Client->Disconnect();
 			bConnected = false;

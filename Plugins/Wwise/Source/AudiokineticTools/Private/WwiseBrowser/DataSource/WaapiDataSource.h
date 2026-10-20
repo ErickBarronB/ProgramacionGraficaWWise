@@ -38,7 +38,8 @@ enum EWwiseConnectionStatus
 	SettingDisabled,
 	WrongProjectOpened,
 	WwiseNotOpen,
-	WrongRootOutputPath
+	WrongRootOutputPath,
+	OpenedModalWindow
 };
 
 struct WaapiTransformStringField
