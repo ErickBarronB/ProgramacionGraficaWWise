@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1A28E8EB-C40A-4AA6-8760-4F53D5775068}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Player" ID="{1A28E8EB-C40A-4AA6-8760-4F53D5775068}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Investigate" ID="{31E6BE20-7178-4FDD-88ED-B1C2F2A49BF2}" ShortID="947068469">
+					<ChildrenList>
+						<SwitchGroup Name="Switch_Investigate" ID="{02312D16-5B0F-4E03-9B83-1EFC129FBD0C}">
+							<ChildrenList>
+								<Switch Name="InvestigateOn" ID="{BFA09D13-EF72-410E-91A7-3320798D0D8F}"/>
+								<Switch Name="InvestigateOff" ID="{958EAD78-0ED6-4938-9922-946A3C95D1C7}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

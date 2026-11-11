@@ -1051,6 +1051,158 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Investigate" ID="{87B1DCF0-672C-4B46-869A-2104B5F48ADB}" ShortID="115516641">
+							<ChildrenList>
+								<SwitchContainer Name="Investigate" ID="{1F8D8F76-1A14-420A-B1E7-210AF5D217AA}" ShortID="835269717">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="InvestigateOff" ID="{958EAD78-0ED6-4938-9922-946A3C95D1C7}" WorkUnitID="{1A28E8EB-C40A-4AA6-8760-4F53D5775068}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Switch_Investigate" ID="{02312D16-5B0F-4E03-9B83-1EFC129FBD0C}" WorkUnitID="{1A28E8EB-C40A-4AA6-8760-4F53D5775068}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="InvestigateHum" ID="{0FD50D76-C9E6-4CF0-BFEA-5823C48D4B0D}" ShortID="597637109">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-50</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="InvestigateHum" ID="{ACA57A14-D907-403F-B414-D0BE380CAA4E}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1272.109"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.90521"/>
+														<Property Name="LoopBegin" Type="Real64" Value="4.51367"/>
+														<Property Name="LoopEnd" Type="Real64" Value="8.29881"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>InvestigateHum.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="156045564"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="InvestigateHum" ID="{ACA57A14-D907-403F-B414-D0BE380CAA4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="InvestigateHum_01" ID="{43CE3036-F886-47F6-B575-D6AE3F81B598}" ShortID="6588400">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="InvestigateHum" ID="{4E0EEE5C-F6C2-4344-9CF0-E9C5AD70F41D}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1272.109"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.90521"/>
+														<Property Name="LoopBegin" Type="Real64" Value="4.51367"/>
+														<Property Name="LoopEnd" Type="Real64" Value="8.29881"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>InvestigateHum.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="156045564"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="InvestigateHum" ID="{4E0EEE5C-F6C2-4344-9CF0-E9C5AD70F41D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="InvestigateHum_01" ID="{43CE3036-F886-47F6-B575-D6AE3F81B598}"/>
+												<PropertyList>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>1</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="InvestigateHum" ID="{0FD50D76-C9E6-4CF0-BFEA-5823C48D4B0D}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>2</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>1</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="InvestigateOn" ID="{BFA09D13-EF72-410E-91A7-3320798D0D8F}"/>
+												<ItemList>
+													<ItemRef Name="InvestigateHum" ID="{0FD50D76-C9E6-4CF0-BFEA-5823C48D4B0D}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="InvestigateOff" ID="{958EAD78-0ED6-4938-9922-946A3C95D1C7}"/>
+												<ItemList>
+													<ItemRef Name="InvestigateHum_01" ID="{43CE3036-F886-47F6-B575-D6AE3F81B598}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactions" ID="{BA948879-F4A0-4AB7-AF82-102A0A543E5E}" ShortID="524623946">

@@ -50,6 +50,10 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_InvestigateSwitch" ID="{06D8266C-1745-4A39-9C06-0B531EC68D2A}" WorkUnitID="{5F0DB58E-EB07-4DDA-8098-08AD1003930A}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Ambient_Switch" ID="{46C12933-B883-4EEB-BEA9-91AFB9E7C3BC}" WorkUnitID="{B2800499-ACEE-48B0-9EB3-67776D16BFA6}"/>
 							<Position X="3" Y="0"/>
 						</Module>

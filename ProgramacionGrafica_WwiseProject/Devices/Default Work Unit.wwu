@@ -3,15 +3,7 @@
 	<Devices>
 		<WorkUnit Name="Default Work Unit" ID="{378E855D-2018-4A0C-A605-9C360F6845DE}" PersistMode="Standalone">
 			<ChildrenList>
-				<AudioDevice Name="System" ID="{705CE403-9C38-4206-98F7-52465CF990AB}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-				</AudioDevice>
+				<AudioDevice Name="System" ID="{705CE403-9C38-4206-98F7-52465CF990AB}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7"/>
 				<AudioDevice Name="No_Output" ID="{1987116F-2EA0-4390-AD86-51FF0410F233}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
 			</ChildrenList>
 		</WorkUnit>
