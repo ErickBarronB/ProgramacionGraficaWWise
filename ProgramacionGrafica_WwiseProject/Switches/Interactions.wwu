@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C1F6D1F2-20BD-492F-8CAE-37D42DA23F1B}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Interactions" ID="{C1F6D1F2-20BD-492F-8CAE-37D42DA23F1B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Fire" ID="{AB17B981-417B-47B0-8FB4-B883C1343FD4}">
+					<ChildrenList>
+						<Switch Name="FireOn" ID="{58A28F5F-7F24-4032-A316-DA1B031A6AA3}"/>
+						<Switch Name="FireOff" ID="{DD35A0E8-F16C-4148-9429-5C63144353CA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

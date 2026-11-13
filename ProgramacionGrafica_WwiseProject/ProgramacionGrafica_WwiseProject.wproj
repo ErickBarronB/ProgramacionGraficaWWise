@@ -12680,6 +12680,9 @@
 				<PhysicalFolder Path="Events\Ambient">
 					<WorkUnit Name="Ambient" ID="{5707132D-AEE7-4EE7-B9C5-3F6FDA4E94F6}" PersistMode="Standalone"/>
 				</PhysicalFolder>
+				<PhysicalFolder Path="Events\Interactions">
+					<WorkUnit Name="Interactions" ID="{228E7021-7696-4C86-A04B-B6FB69992ADA}" PersistMode="Standalone"/>
+				</PhysicalFolder>
 				<PhysicalFolder Path="Events\Player">
 					<WorkUnit Name="Player" ID="{9DF2A60B-64AA-4ECB-A9CB-22D46482067C}" PersistMode="Standalone"/>
 				</PhysicalFolder>

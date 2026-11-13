@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Thunder" ID="{F51BA686-DCC9-43F4-915B-F9D132AD096B}">
+					<ChildrenList>
+						<Action Name="" ID="{1D8866F7-2050-4C9C-8520-68A3EBDE3B25}" ShortID="1027645643">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Thunder" ID="{9756E1D4-7FBE-4724-AE20-1BF75E0DF4B9}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -331,6 +331,32 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<Sound Name="Thunder" ID="{9756E1D4-7FBE-4724-AE20-1BF75E0DF4B9}" ShortID="426855795">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambient" ID="{19AD80F2-BA87-41E2-9DEC-6F027E76C3CE}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Thunder" ID="{1F827688-1CA4-40DA-8377-1C1F743BC724}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.81072"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Thunder.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="320787535"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Thunder" ID="{1F827688-1CA4-40DA-8377-1C1F743BC724}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{CCF66832-8695-4F8C-8DA2-BFA934D3105B}" ShortID="667574137">
@@ -1664,6 +1690,181 @@
 										<ActiveSource Name="RadioStatic" ID="{90B04935-236C-47AC-BA5F-39BCA5FE4BDA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Fire" ID="{674670D0-9A58-470B-8380-6571CAC726BA}" ShortID="11232235">
+							<ChildrenList>
+								<SwitchContainer Name="Fire" ID="{6762BBF7-507B-43B8-AB26-4EADE83D1635}" ShortID="701793578">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="AttenuationDistanceScaling" Type="Real32" Value="2"/>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Fire" ID="{0A192970-3547-49A7-B692-3A73876D3A76}" WorkUnitID="{E653F977-B0FD-4D46-AE1C-0C4673BB3535}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Fire" ID="{AB17B981-417B-47B0-8FB4-B883C1343FD4}" WorkUnitID="{C1F6D1F2-20BD-492F-8CAE-37D42DA23F1B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="FireOn" ID="{9F45F6DA-5A03-464F-AD99-1BC0F3FAF910}" ShortID="357528925">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="40"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FireplaceIdle" ID="{C2A52601-931D-4E63-9509-CF3D3F401A4A}" ShortID="756752256">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FireplaceIdle" ID="{0AEF6C30-D018-4F52-B2D8-BA6176A4B145}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="2066.9"/>
+																<Property Name="LoopBegin" Type="Real64" Value="5.16806"/>
+																<Property Name="LoopEnd" Type="Real64" Value="16.6364"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FireplaceIdle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="426748068"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FireplaceIdle" ID="{0AEF6C30-D018-4F52-B2D8-BA6176A4B145}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FireplaceOn" ID="{F1973649-C88D-42EB-A488-AD2556914FD5}" ShortID="813456366">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FireplaceOn" ID="{151A6A4C-AE64-4F2D-B3A2-07780AC9EC5C}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.26082"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.63169"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FireplaceOn.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="809936517"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FireplaceOn" ID="{151A6A4C-AE64-4F2D-B3A2-07780AC9EC5C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<PluginInnerObject Name="" ID="{04B35623-B1D7-4F37-BF95-E55D2D0899E4}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+														<ReferenceList>
+															<Reference Name="PlaylistObject">
+																<ObjectRef Name="FireplaceOn" ID="{F1973649-C88D-42EB-A488-AD2556914FD5}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+															</Reference>
+														</ReferenceList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{9838C879-A252-4B40-A5EF-391E542D1EE5}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+														<ReferenceList>
+															<Reference Name="PlaylistObject">
+																<ObjectRef Name="FireplaceIdle" ID="{C2A52601-931D-4E63-9509-CF3D3F401A4A}" WorkUnitID="{8E178340-DBD8-4C82-B7BE-E924D0D20841}"/>
+															</Reference>
+														</ReferenceList>
+													</PluginInnerObject>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+										<Sound Name="FireOff" ID="{C05B2B60-60F8-4B1A-BC35-596DC450E546}" ShortID="200121182">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21D31B43-199D-4D58-9D10-CEE0BAF0254B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A397473-0361-421C-8F03-F43123B13488}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FireOff" ID="{395A4227-30DA-43C7-8E60-ED1BD48A7E95}">
+													<Language>SFX</Language>
+													<AudioFile>FireOff.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="244013122"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FireOff" ID="{395A4227-30DA-43C7-8E60-ED1BD48A7E95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="FireOff" ID="{C05B2B60-60F8-4B1A-BC35-596DC450E546}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FireOn" ID="{9F45F6DA-5A03-464F-AD99-1BC0F3FAF910}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="FireOn" ID="{58A28F5F-7F24-4032-A316-DA1B031A6AA3}"/>
+												<ItemList>
+													<ItemRef Name="FireOn" ID="{9F45F6DA-5A03-464F-AD99-1BC0F3FAF910}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="FireOff" ID="{DD35A0E8-F16C-4148-9429-5C63144353CA}"/>
+												<ItemList>
+													<ItemRef Name="FireOff" ID="{C05B2B60-60F8-4B1A-BC35-596DC450E546}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
